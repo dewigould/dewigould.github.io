@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dewigould.github.io/al-folio/sitemap.xml
+Sitemap: https://dewigould.github.io/sitemap.xml
