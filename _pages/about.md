@@ -14,11 +14,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Researcher at the Alan Turing Institute. Currently working on [Project Bluebird](https://www.turing.ac.uk/research/research-programmes/project-bluebird).
+Researcher at the Alan Turing Institute. Currently working on Project Bluebird.
 
 My current interests are:
 
-
 Previously I completed a PhD in mathematical physics at the University of Oxford. My thesis title was "Generalized Symmetries in String Theory Realizations of Quantum Field Theories".
 
-See a [list of my publications][https://scholar.google.com/citations?user=zY2v7W8AAAAJ&hl=en].
+See a [list of my publications](https://scholar.google.com/citations?user=zY2v7W8AAAAJ&hl=en).
