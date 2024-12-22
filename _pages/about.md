@@ -17,6 +17,6 @@ news: False # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-Researcher at the [Alan Turing Institute](https://www.turing.ac.uk/people/dewi-gould).
+Researcher at the [Alan Turing Institute](https://www.turing.ac.uk/people/dewi-gould){:data-proofer-ignore}.
 
 [Github](https://github.com/dewigould) [Linkedin](https://www.linkedin.com/in/dewigould/) [GoogleScholar](https://scholar.google.com/citations?hl=en&user=zY2v7W8AAAAJ&view_op=list_works)
