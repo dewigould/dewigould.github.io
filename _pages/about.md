@@ -16,7 +16,7 @@ social: true # includes social icons at the bottom of the page
 
 Researcher at the Alan Turing Institute. Currently working on Project Bluebird.
 
-My current interests are:
+My current research is on synthetic scenario generation for research towards autonomous air-traffic control.
 
 Previously I completed a PhD in mathematical physics at the University of Oxford. My thesis title was "Generalized Symmetries in String Theory Realizations of Quantum Field Theories".
 
