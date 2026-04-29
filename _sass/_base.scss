@@ -399,30 +399,33 @@ ul.task-list input[type="checkbox"] {
 
 .social {
   text-align: center;
+  margin-top: 2rem;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 1.4rem;
 
     a {
+      margin: 0 0.55rem;
+
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-bottom: 0.25rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-bottom: 0.25rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 1.4rem;
+          height: 1.4rem;
         }
       }
 
       i::before {
-        color: var(--global-text-color);
+        color: var(--global-text-color-light);
         transition-property: all 0.2s ease-in-out;
       }
 
@@ -438,6 +441,7 @@ ul.task-list input[type="checkbox"] {
 
   .contact-note {
     font-size: 0.8rem;
+    color: var(--global-text-color-light);
   }
 }
 
