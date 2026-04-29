@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Researcher, Alan Turing Institute
+subtitle: Astra Fellow, Redwood Research
 
 profile:
   align: right
@@ -14,6 +14,6 @@ selected_papers: true
 social: true
 ---
 
-I'm a researcher at the [Alan Turing Institute](https://www.turing.ac.uk/), currently working on Project Bluebird — synthetic scenario generation for research towards autonomous air-traffic control.
+I'm an Astra Fellow at [Redwood Research](https://redwoodresearch.org/), working on AI safety. My research is motivated by understanding and reducing risks from increasingly capable AI systems.
 
-Previously I completed a PhD in mathematical physics at the University of Oxford. My thesis was *Generalized Symmetries in String Theory Realizations of Quantum Field Theories*.
+Previously I was a researcher at the Alan Turing Institute on Project Bluebird, working on synthetic scenario generation for autonomous air-traffic control. Before that I completed a PhD in mathematical physics at the University of Oxford, with a thesis on *Generalized Symmetries in String Theory Realizations of Quantum Field Theories*.
