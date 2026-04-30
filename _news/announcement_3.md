@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started as an [Astra Fellow](https://redwoodresearch.org/) at Redwood Research in Berkeley.
+Started as an Astra Fellow at [Redwood Research](https://redwoodresearch.org/) in Berkeley.
