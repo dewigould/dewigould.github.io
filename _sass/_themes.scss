@@ -9,8 +9,8 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #1a1a1a;
   --global-text-color-light: #6b7280;
-  --global-theme-color: #3b5571;
-  --global-hover-color: #1f3147;
+  --global-theme-color: #1f5fa8;
+  --global-hover-color: #15457c;
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$white-color};
   --global-footer-text-color: #9ca3af;
@@ -18,7 +18,7 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.08);
   --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #3b5571;
+  --global-highlight-color: #1f5fa8;
   --global-back-to-top-bg-color: rgba(
     #{color.channel($black-color, "red", $space: rgb)},
     #{color.channel($black-color, "green", $space: rgb)},
