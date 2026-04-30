@@ -49,6 +49,15 @@ table.table a {
   }
 }
 
+// Bold inline links in the main article body (about page, page bodies)
+// so they have the same visual weight as the bolded publication titles.
+.post article .clearfix a,
+.post article > p a,
+.post article > ul a,
+.post article > ol a {
+  font-weight: 600;
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
