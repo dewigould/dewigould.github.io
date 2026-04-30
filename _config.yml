@@ -261,8 +261,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Gould]
+  first_name: [Dewi, D., "Dewi S. W.", "Dewi Sid William"]
 
   style: apa
   locale: en
