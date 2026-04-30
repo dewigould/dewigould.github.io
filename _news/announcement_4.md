@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented "A Positive Case for Faithfulness: LLM Self-Explanations Help Predict Model Behavior" as a poster at the ICLR 2026 Trustworthy-AI Workshop :brazil:.
+Our work "A Positive Case for Faithfulness: LLM Self-Explanations Help Predict Model Behavior" was presented as a poster at the ICLR 2026 Trustworthy-AI Workshop :brazil:.
