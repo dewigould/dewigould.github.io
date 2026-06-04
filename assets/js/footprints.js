@@ -9,20 +9,16 @@
   const STEP_DISTANCE = 45; // px the cursor must travel before the next print
   const STRIDE = 9; // px lateral offset between left and right feet
   const LIFETIME = 1600; // ms until a print has fully faded
-  const BASE_OPACITY = 0.2; // starting opacity of a fresh print (kept faint)
+  const BASE_OPACITY = 0.12; // starting opacity of a fresh print (very faint)
 
-  // Hiking-boot sole imprint: stacked tread lugs, widest at the ball, pinched
-  // at the arch, rounded heel. Points "up" by default.
+  // Muddy hiking-boot sole imprint: rounded toe, wide ball, pinched instep,
+  // rounded heel, with a little mud splatter. Points "up" by default.
   const FOOT_SVG =
-    '<svg width="13" height="26" viewBox="0 0 32 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">' +
-    '<rect x="8" y="1" width="16" height="6" rx="3"/>' +
-    '<rect x="5" y="9" width="22" height="6" rx="3"/>' +
-    '<rect x="4" y="17" width="24" height="6" rx="3"/>' +
-    '<rect x="5" y="25" width="22" height="6" rx="3"/>' +
-    '<rect x="8" y="33" width="16" height="6" rx="3"/>' +
-    '<rect x="6" y="41" width="20" height="6" rx="3"/>' +
-    '<rect x="5" y="49" width="22" height="6" rx="3"/>' +
-    '<rect x="7" y="57" width="18" height="6" rx="3"/>' +
+    '<svg width="13" height="26" viewBox="0 0 32 64" fill="#6b4f30" xmlns="http://www.w3.org/2000/svg">' +
+    '<path d="M16 2 C23 2 27 8 27 18 C27 26 25 30 24 36 C23.5 42 25 48 25 54 C25 60 21 63 16 63 C11 63 7 60 7 54 C7 48 8.5 42 8 36 C7 30 5 26 5 18 C5 8 9 2 16 2 Z"/>' +
+    '<circle cx="29" cy="22" r="1.4" opacity="0.8"/>' +
+    '<circle cx="3" cy="40" r="1.6" opacity="0.7"/>' +
+    '<circle cx="27" cy="58" r="1.2" opacity="0.7"/>' +
     "</svg>";
 
   // Inject the fade keyframes once. A CSS animation (rather than a JS-triggered
@@ -63,7 +59,6 @@
       (leftFoot ? -1 : 1) +
       ");";
     print.innerHTML = FOOT_SVG;
-    print.firstChild.style.fill = "currentColor";
     container.appendChild(print);
 
     setTimeout(function () {
