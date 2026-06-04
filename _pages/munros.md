@@ -8,25 +8,20 @@ nav_order: 6
 sitemap: false
 ---
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css"
-  integrity="sha256-q9ba7o845pMPFU+zcAll8rv+gC+fSovKsOoNQ6cynuQ="
-  crossorigin="anonymous"
-/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
 <style>
   .munro-map {
     width: 100%;
-    height: 480px;
-    margin: 0 0 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
-    z-index: 0;
+    height: 550px;
+    margin: 0 auto 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    z-index: 1;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     .munro-map {
-      height: 380px;
+      height: 400px;
     }
   }
   .munro-intro {
@@ -98,11 +93,7 @@ sitemap: false
 
 <div id="munro-map" class="munro-map"></div>
 
-<script
-  src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"
-  integrity="sha256-MgH13bFTTNqsnuEoqNPBLDaqxjGH+lCpqrukmXc8Ppg="
-  crossorigin="anonymous"
-></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
   (function () {
     // All 282 Munros with coordinates
