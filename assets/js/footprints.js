@@ -8,8 +8,8 @@
 
   const STEP_DISTANCE = 45; // px the cursor must travel before the next print
   const STRIDE = 9; // px lateral offset between left and right feet
-  const LIFETIME = 1500; // ms until a print has fully faded
-  const BASE_OPACITY = 0.4; // starting opacity of a fresh print
+  const LIFETIME = 1600; // ms until a print has fully faded
+  const BASE_OPACITY = 0.55; // starting opacity of a fresh print
 
   // Boot-sole silhouette (forefoot + heel), pointing "up" by default.
   const FOOT_SVG =
@@ -17,6 +17,14 @@
     '<ellipse cx="12" cy="13" rx="9" ry="13"/>' +
     '<ellipse cx="12" cy="34" rx="6.5" ry="6.5"/>' +
     "</svg>";
+
+  // Inject the fade keyframes once. A CSS animation (rather than a JS-triggered
+  // transition) avoids the single-rAF race where the browser jumps straight to
+  // the end state and the print never visibly appears.
+  const style = document.createElement("style");
+  style.textContent =
+    "@keyframes footprintFade{from{opacity:" + BASE_OPACITY + "}to{opacity:0}}";
+  document.head.appendChild(style);
 
   const container = document.createElement("div");
   container.style.cssText =
@@ -40,11 +48,9 @@
       (x + ox) +
       "px;top:" +
       (y + oy) +
-      "px;color:var(--global-text-color,#333);opacity:" +
-      BASE_OPACITY +
-      ";transition:opacity " +
+      "px;color:var(--global-text-color,#333);animation:footprintFade " +
       LIFETIME +
-      "ms ease-out;transform:translate(-50%,-50%) rotate(" +
+      "ms ease-out forwards;transform:translate(-50%,-50%) rotate(" +
       (angle + Math.PI / 2) +
       "rad) scaleX(" +
       (leftFoot ? -1 : 1) +
@@ -53,9 +59,6 @@
     print.firstChild.style.fill = "currentColor";
     container.appendChild(print);
 
-    requestAnimationFrame(function () {
-      print.style.opacity = "0";
-    });
     setTimeout(function () {
       print.remove();
     }, LIFETIME);
