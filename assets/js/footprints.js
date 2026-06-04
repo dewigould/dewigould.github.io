@@ -9,16 +9,22 @@
   const STEP_DISTANCE = 45; // px the cursor must travel before the next print
   const STRIDE = 9; // px lateral offset between left and right feet
   const LIFETIME = 1600; // ms until a print has fully faded
-  const BASE_OPACITY = 0.12; // starting opacity of a fresh print (very faint)
+  const BASE_OPACITY = 0.16; // starting opacity of a fresh print (faint)
 
-  // Muddy hiking-boot sole imprint: rounded toe, wide ball, pinched instep,
-  // rounded heel, with a little mud splatter. Points "up" by default.
+  // Muddy hiking-boot print: separate forefoot + heel pads with lug tread cut
+  // through as transparent grooves (evenodd), plus mud splatter. Points "up".
   const FOOT_SVG =
     '<svg width="13" height="26" viewBox="0 0 32 64" fill="#6b4f30" xmlns="http://www.w3.org/2000/svg">' +
-    '<path d="M16 2 C23 2 27 8 27 18 C27 26 25 30 24 36 C23.5 42 25 48 25 54 C25 60 21 63 16 63 C11 63 7 60 7 54 C7 48 8.5 42 8 36 C7 30 5 26 5 18 C5 8 9 2 16 2 Z"/>' +
-    '<circle cx="29" cy="22" r="1.4" opacity="0.8"/>' +
-    '<circle cx="3" cy="40" r="1.6" opacity="0.7"/>' +
-    '<circle cx="27" cy="58" r="1.2" opacity="0.7"/>' +
+    '<path fill-rule="evenodd" d="' +
+    "M16 2 C24 2 27 9 27 18 C27 27 23 34 16 34 C9 34 5 27 5 18 C5 9 8 2 16 2 Z " +
+    "M9 9 L23 9 L23 11 L9 11 Z M7 15 L25 15 L25 17 L7 17 Z M7 21 L25 21 L25 23 L7 23 Z M9 27 L23 27 L23 29 L9 29 Z " +
+    "M16 40 C22 40 24 45 24 51 C24 57 20 62 16 62 C12 62 8 57 8 51 C8 45 10 40 16 40 Z " +
+    "M10 46 L22 46 L22 48 L10 48 Z M10 52 L22 52 L22 54 L10 54 Z M11 57 L21 57 L21 59 L11 59 Z" +
+    '"/>' +
+    '<circle cx="30" cy="30" r="1.6"/>' +
+    '<circle cx="3" cy="44" r="1.8"/>' +
+    '<circle cx="28" cy="60" r="1.3"/>' +
+    '<circle cx="2" cy="20" r="1.2"/>' +
     "</svg>";
 
   // Inject the fade keyframes once. A CSS animation (rather than a JS-triggered
