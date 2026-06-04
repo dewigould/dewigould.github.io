@@ -9,13 +9,20 @@
   const STEP_DISTANCE = 45; // px the cursor must travel before the next print
   const STRIDE = 9; // px lateral offset between left and right feet
   const LIFETIME = 1600; // ms until a print has fully faded
-  const BASE_OPACITY = 0.55; // starting opacity of a fresh print
+  const BASE_OPACITY = 0.2; // starting opacity of a fresh print (kept faint)
 
-  // Boot-sole silhouette (forefoot + heel), pointing "up" by default.
+  // Hiking-boot sole imprint: stacked tread lugs, widest at the ball, pinched
+  // at the arch, rounded heel. Points "up" by default.
   const FOOT_SVG =
-    '<svg width="14" height="22" viewBox="0 0 24 40" xmlns="http://www.w3.org/2000/svg">' +
-    '<ellipse cx="12" cy="13" rx="9" ry="13"/>' +
-    '<ellipse cx="12" cy="34" rx="6.5" ry="6.5"/>' +
+    '<svg width="13" height="26" viewBox="0 0 32 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">' +
+    '<rect x="8" y="1" width="16" height="6" rx="3"/>' +
+    '<rect x="5" y="9" width="22" height="6" rx="3"/>' +
+    '<rect x="4" y="17" width="24" height="6" rx="3"/>' +
+    '<rect x="5" y="25" width="22" height="6" rx="3"/>' +
+    '<rect x="8" y="33" width="16" height="6" rx="3"/>' +
+    '<rect x="6" y="41" width="20" height="6" rx="3"/>' +
+    '<rect x="5" y="49" width="22" height="6" rx="3"/>' +
+    '<rect x="7" y="57" width="18" height="6" rx="3"/>' +
     "</svg>";
 
   // Inject the fade keyframes once. A CSS animation (rather than a JS-triggered

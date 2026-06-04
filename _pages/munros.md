@@ -2,6 +2,7 @@
 layout: page
 permalink: /munros/
 title: 🏔️
+tab_title: Munros
 nav: true
 nav_order: 6
 sitemap: false
@@ -17,11 +18,16 @@ sitemap: false
 <style>
   .munro-map {
     width: 100%;
-    height: 600px;
+    height: 480px;
     margin: 0 0 1.5rem;
     border-radius: 12px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
     z-index: 0;
+  }
+  @media (max-width: 768px) {
+    .munro-map {
+      height: 380px;
+    }
   }
   .munro-intro {
     font-size: 1.1rem;
@@ -531,6 +537,14 @@ sitemap: false
               "</strong><br><span class=\"popup-date\">Not yet climbed</span></div>"
           );
       }
+    });
+
+    // Fix tile rendering if the container sized after init
+    setTimeout(function () {
+      map.invalidateSize();
+    }, 200);
+    window.addEventListener("load", function () {
+      map.invalidateSize();
     });
   })();
 </script>
