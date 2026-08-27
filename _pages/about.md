@@ -14,7 +14,7 @@ selected_papers: true
 social: true
 ---
 
-I have recently joined the new [Arcadia Impact](https://www.arcadiaimpact.org/about) Alignment Project (in collaboration with the UK AISI alignment team). My research is motivated by understanding and reducing risks from increasingly capable AI systems.
+I am a researcher on the [Arcadia Impact](https://www.arcadiaimpact.org/about) Alignment Project (in collaboration with the UK AISI alignment team). My research is motivated by understanding and reducing risks from increasingly capable AI systems.
 
 Previously I...
 
