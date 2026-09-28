@@ -422,6 +422,14 @@ ul.task-list input[type="checkbox"] {
         margin-bottom: 0.25rem;
       }
 
+      img[alt="LessWrong"] {
+        opacity: 0.5;
+      }
+
+      html[data-theme="dark"] & img[alt="LessWrong"] {
+        filter: invert(1);
+      }
+
       svg {
         width: 1.4rem;
         height: 1.4rem;

@@ -21,6 +21,10 @@ github_username: dewigould # your GitHub user name
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
 linkedin_username: dewigould # your LinkedIn user name
+lesswrong:
+  logo: /assets/img/lesswrong.png
+  title: LessWrong
+  url: https://www.lesswrong.com/users/dewi-gould
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: 0000-0002-8356-8966 # your ORCID ID
