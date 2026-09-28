@@ -14,7 +14,7 @@ selected_papers: true
 social: true
 ---
 
-I am a researcher on the [Arcadia Impact Alignment Team](https://www.arcadiaimpact.org/alignment). I'm thinking about scalable oversight and automated alignment research.
+I am a research lead on the [Arcadia Impact Alignment Team](https://www.arcadiaimpact.org/alignment). I'm thinking about scalable oversight and automated alignment research.
 
 Previously I...
 
