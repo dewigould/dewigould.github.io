@@ -83,7 +83,7 @@ sitemap: false
 
 <p class="munro-intro">
   I'm trying to climb all the <a href="https://www.walkhighlands.co.uk/munros/">Munros</a>
-  in Scotland — so far I've done <strong><span id="munro-count">124</span> / 282</strong>.
+  in Scotland — so far I've done <strong><span id="munro-count">127</span> / 282</strong>.
 </p>
 
 <div class="munro-legend">
@@ -282,6 +282,8 @@ sitemap: false
       {name:"Sgurr a'Chaorachain (Monar)",lat:57.5331,lng:-5.3369},
       {name:"Fionn Bheinn",lat:57.6881,lng:-5.2361},
       {name:"Ben Wyvis - Glas Leathad Mor",lat:57.7669,lng:-4.6039},
+      {name:"An Teallach - Bidein a' Ghlas Thuill",lat:57.8065,lng:-5.2531},
+      {name:"An Teallach - Sgurr Fiona",lat:57.8009,lng:-5.2593},
       {name:"Ben Hope",lat:58.4008,lng:-4.7722},
       {name:"Conival",lat:58.1111,lng:-4.9514},
       {name:"Beinn Dearg (Torridon)",lat:57.5647,lng:-5.5494},
@@ -464,7 +466,10 @@ sitemap: false
       {name:"Beinn Iutharn Mhor",lat:56.8692,lng:-3.6558,date:"2026-05-24"},
       {name:"Carn an Righ",lat:56.8458,lng:-3.6272,date:"2026-05-24"},
       {name:"Glas Tulaichean",lat:56.8572,lng:-3.5692,date:"2026-05-25"},
-      {name:"An Socach (Glen Ey)",lat:56.8431,lng:-3.6547,date:"2026-05-25"}
+      {name:"An Socach (Glen Ey)",lat:56.8431,lng:-3.6547,date:"2026-05-25"},
+      {name:"Ben Wyvis - Glas Leathad Mor",lat:57.7669,lng:-4.6039,date:"2026-10-10"},
+      {name:"An Teallach - Bidein a' Ghlas Thuill",lat:57.8065,lng:-5.2531,date:"2026-10-11"},
+      {name:"An Teallach - Sgurr Fiona",lat:57.8009,lng:-5.2593,date:"2026-10-11"}
     ];
 
     var completedNames = {};
