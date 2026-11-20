@@ -83,7 +83,7 @@ sitemap: false
 
 <p class="munro-intro">
   I'm trying to climb all the <a href="https://www.walkhighlands.co.uk/munros/">Munros</a>
-  in Scotland — so far I've done <strong><span id="munro-count">127</span> / 282</strong>.
+  in Scotland — so far I've done <strong><span id="munro-count">128</span> / 282</strong>.
 </p>
 
 <div class="munro-legend">
@@ -477,9 +477,6 @@ sitemap: false
       completedNames[m.name] = true;
     });
 
-    // Keep the intro count in sync with the data (unique summits)
-    var countEl = document.getElementById("munro-count");
-    if (countEl) countEl.textContent = Object.keys(completedNames).length;
 
     var mapEl = document.getElementById("munro-map");
     if (!mapEl || typeof L === "undefined") return;
